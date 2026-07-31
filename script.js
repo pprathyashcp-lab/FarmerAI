@@ -1,6 +1,18 @@
 const button = document.getElementById("analyzeBtn");
 const result = document.getElementById("result");
 const photo = document.getElementById("plantPhoto");
+const preview = document.getElementById("preview");
+
+photo.addEventListener("change", function() {
+
+  const file = photo.files[0];
+
+  if (file) {
+    preview.src = URL.createObjectURL(file);
+    preview.style.display = "block";
+  }
+
+});
 
 button.addEventListener("click", function () {
 
@@ -18,6 +30,6 @@ Plant: Banana
 
 Disease: Leaf Spot
 
-Suggestion: Spray suitable fungicide and remove infected leaves.
+Suggestion: Remove affected leaves and give proper care.
 `;
 });
