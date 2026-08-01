@@ -21,15 +21,20 @@ button.addEventListener("click", function () {
     return;
   }
 
-  result.innerHTML = `
-🤖 AI is analyzing your plant...
+ result.innerHTML = `
+<h2>🌿 Analysis Report</h2>
 
-🌿 Demo Result
+<b>🌱 Plant:</b> Banana<br><br>
 
-Plant: Banana
+<b>🦠 Disease:</b> Leaf Spot<br><br>
 
-Disease: Leaf Spot
+<b>📊 Health:</b> 82% Healthy<br><br>
 
-Suggestion: Remove affected leaves and give proper care.
+<b>💧 Water:</b> Water once every 2 days.<br><br>
+
+<b>🌱 Fertilizer:</b> Organic Compost or Vermicompost.<br><br>
+
+<b>☀️ Sunlight:</b> 6–8 hours daily.<br><br>
+
+<b>💡 Advice:</b> Remove infected leaves and spray a suitable fungicide if the disease spreads.
 `;
-});
